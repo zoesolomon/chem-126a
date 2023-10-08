@@ -18,7 +18,7 @@ kB = 1.38064852*10**(-23) #m^2 kg s^(-2) K^(-1)
 plt.figure(dpi=150)
 
 v0 = 0
-v1 = 12500
+v1 = 5000
 MH2 = 2.016 * pow(10, -3) #kg/mol
 mH2 = MH2/Av #1 molecule in kg
 nSamples = 100000
@@ -58,7 +58,7 @@ plt.savefig('Boltzmann_H2.png')
 plt.figure(dpi=150)
 
 v0 = 0
-v1 = 2500
+v1 = 5000
 MCO2 = 44.01 * pow(10, -3) #kg/mol
 mCO2 = MCO2/Av #1 molecule in kg
 nSamples = 100000
@@ -99,9 +99,9 @@ plt.savefig('Boltzmann_CO2.png')
 plt.figure(dpi=150)
 
 v0 = 0
-v1 = 2500
+v1 = 5000
 MRn = 222 * pow(10, -3) #kg/mol
-mRn = MCO2/Av #1 molecule in kg
+mRn = MRn/Av #1 molecule in kg
 nSamples = 100000
 dv = (v1-v0)/nSamples
 velocities = np.linspace(v0,v1, nSamples) #m
